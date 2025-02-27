@@ -1,0 +1,120 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sghg="http://sghg.xbrl.us/taxonomies/sghg/2025" xmlns:linkbase="http://www.xbrl.org/2003/linkbase" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="http://sghg.xbrl.us/taxonomies/sghg/2025" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:annotation>
+    <xs:appinfo>
+      <linkbase:linkbaseRef xlink:href="sghg-2025-def.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:type="simple"/>
+      <linkbase:linkbaseRef xlink:href="sghg-2025-pre.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:type="simple"/>
+      <linkbase:roleType roleURI="http://sghg.xbrl.us/role/ifrs_s2/document_entity_information" id="document_entity_information">
+        <linkbase:definition>219000 - Report - Document and Entity Information - California HSC Section 38532</linkbase:definition>
+        <linkbase:usedOn>linkbase:presentationLink</linkbase:usedOn>
+        <linkbase:usedOn>linkbase:definitionLink</linkbase:usedOn>
+      </linkbase:roleType>
+      <linkbase:roleType roleURI="http://sghg.xbrl.us/role/ifrs_s2/ghg_disclosures_s1_s2_by_basis" id="ghg_disclosures_s1_s2_by_basis">
+        <linkbase:definition>215000 - Report - GHG Disclosures - Scope 1 and 2 by Disclosure Basis - California HSC Section 38532</linkbase:definition>
+        <linkbase:usedOn>linkbase:presentationLink</linkbase:usedOn>
+        <linkbase:usedOn>linkbase:definitionLink</linkbase:usedOn>
+      </linkbase:roleType>
+      <linkbase:roleType roleURI="http://sghg.xbrl.us/role/ifrs_s2/ghg_disclosures_s1_s3_by_ghg" id="ghg_disclosures_s1_s3_by_ghg">
+        <linkbase:definition>210000 - Report - GHG Disclosures - Scopes 1 and 3 by GHG - California HSC Section 38532</linkbase:definition>
+        <linkbase:usedOn>linkbase:presentationLink</linkbase:usedOn>
+        <linkbase:usedOn>linkbase:definitionLink</linkbase:usedOn>
+      </linkbase:roleType>
+      <linkbase:roleType roleURI="http://sghg.xbrl.us/role/ifrs_s2/ghg_disclosures_s3_by_category" id="ghg_disclosures_s3_by_category">
+        <linkbase:definition>213000 - Report - GHG Disclosures - Scope 3 by Category - California HSC Section 38532</linkbase:definition>
+        <linkbase:usedOn>linkbase:presentationLink</linkbase:usedOn>
+        <linkbase:usedOn>linkbase:definitionLink</linkbase:usedOn>
+      </linkbase:roleType>
+      <linkbase:roleType roleURI="http://sghg.xbrl.us/role/ifrs_s2/ghg_emmissions_targets" id="ghg_emmissions_targets">
+        <linkbase:definition>220000 - Report - GHG Emissions Targets</linkbase:definition>
+        <linkbase:usedOn>linkbase:presentationLink</linkbase:usedOn>
+        <linkbase:usedOn>linkbase:definitionLink</linkbase:usedOn>
+      </linkbase:roleType>
+      <linkbase:roleType roleURI="http://sghg.xbrl.us/role/ifrs_s2/ghg_related_disclosure" id="ghg_related_disclosure">
+        <linkbase:definition>218000 - Report - GHG Measurement Related Disclosures - California HSC Section 38532</linkbase:definition>
+        <linkbase:usedOn>linkbase:presentationLink</linkbase:usedOn>
+        <linkbase:usedOn>linkbase:definitionLink</linkbase:usedOn>
+      </linkbase:roleType>
+      <linkbase:roleType roleURI="http://sghg.xbrl.us/role/ifrs_s2/planned_use_carbon_credits" id="planned_use_carbon_credits">
+        <linkbase:definition>230000 - Report - Planned Use of Carbon Credits</linkbase:definition>
+        <linkbase:usedOn>linkbase:presentationLink</linkbase:usedOn>
+        <linkbase:usedOn>linkbase:definitionLink</linkbase:usedOn>
+      </linkbase:roleType>
+      <linkbase:linkbase>
+        <linkbase:labelLink xlink:role="http://www.xbrl.org/2003/role/link" xlink:type="extended">
+          <linkbase:loc xlink:label="ns15_DocumentandEntityAbstract" xlink:href="#sghg_DocumentandEntityAbstract" xlink:type="locator"/>
+          <linkbase:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:type="arc" xlink:from="ns15_DocumentandEntityAbstract" xlink:to="lbl_lab_ns15_DocumentandEntityAbstract"/>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_DocumentandEntityAbstract" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en-US">Information about the document (report) and the reporting entity.</linkbase:label>
+          <linkbase:loc xlink:label="ns15_LegalEntityIdentifier" xlink:href="#sghg_LegalEntityIdentifier" xlink:type="locator"/>
+          <linkbase:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:type="arc" xlink:from="ns15_LegalEntityIdentifier" xlink:to="lbl_lab_ns15_LegalEntityIdentifier"/>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_LegalEntityIdentifier" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en-US">A globally unique ISO 17442 value to identify entities, commonly abbreviated as LEI.</linkbase:label>
+          <linkbase:loc xlink:label="ns15_CaliforniaSpecificIdentifier" xlink:href="#sghg_CaliforniaSpecificIdentifier" xlink:type="locator"/>
+          <linkbase:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:type="arc" xlink:from="ns15_CaliforniaSpecificIdentifier" xlink:to="lbl_lab_ns15_CaliforniaSpecificIdentifier"/>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_CaliforniaSpecificIdentifier" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en-US">A California specific identifier.</linkbase:label>
+          <linkbase:loc xlink:label="ns15_PhysicalLocationInCaliforniaEnumerated" xlink:href="#sghg_PhysicalLocationInCaliforniaEnumerated" xlink:type="locator"/>
+          <linkbase:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:type="arc" xlink:from="ns15_PhysicalLocationInCaliforniaEnumerated" xlink:to="lbl_lab_ns15_PhysicalLocationInCaliforniaEnumerated"/>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_PhysicalLocationInCaliforniaEnumerated" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en-US">Indicates if the company is headquartered in the State of California, has one or more physical locations in California, or is not located in California.</linkbase:label>
+          <linkbase:loc xlink:label="ns15_AssuranceAbstract" xlink:href="#sghg_AssuranceAbstract" xlink:type="locator"/>
+          <linkbase:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:type="arc" xlink:from="ns15_AssuranceAbstract" xlink:to="lbl_lab_ns15_AssuranceAbstract"/>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_AssuranceAbstract" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en-US">Information about assurance.</linkbase:label>
+          <linkbase:loc xlink:label="ns15_AssuranceisProvidedonGHGReport" xlink:href="#sghg_AssuranceisProvidedonGHGReport" xlink:type="locator"/>
+          <linkbase:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:type="arc" xlink:from="ns15_AssuranceisProvidedonGHGReport" xlink:to="lbl_lab_ns15_AssuranceisProvidedonGHGReport"/>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_AssuranceisProvidedonGHGReport" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en-US">Indicates if the company has assurance on their GHG report. If assurance is provided, report as true; if it is not provided, report as false.</linkbase:label>
+          <linkbase:loc xlink:label="ns15_AssuranceisLimitedorReasonableEnumerated" xlink:href="#sghg_AssuranceisLimitedorReasonableEnumerated" xlink:type="locator"/>
+          <linkbase:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:type="arc" xlink:from="ns15_AssuranceisLimitedorReasonableEnumerated" xlink:to="lbl_lab_ns15_AssuranceisLimitedorReasonableEnumerated"/>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_AssuranceisLimitedorReasonableEnumerated" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en-US">Indicates if the assurance is limited or reasonable.</linkbase:label>
+          <linkbase:loc xlink:label="ns15_NameOfTheAssuranceProvider" xlink:href="#sghg_NameOfTheAssuranceProvider" xlink:type="locator"/>
+          <linkbase:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:type="arc" xlink:from="ns15_NameOfTheAssuranceProvider" xlink:to="lbl_lab_ns15_NameOfTheAssuranceProvider"/>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_NameOfTheAssuranceProvider" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en-US">Name of the assurance provider.</linkbase:label>
+          <linkbase:loc xlink:label="ns15_AssuranceProvidedExplanatory" xlink:href="#sghg_AssuranceProvidedExplanatory" xlink:type="locator"/>
+          <linkbase:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:type="arc" xlink:from="ns15_AssuranceProvidedExplanatory" xlink:to="lbl_lab_ns15_AssuranceProvidedExplanatory"/>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_AssuranceProvidedExplanatory" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en-US">Description of the type of assurance provided.</linkbase:label>
+          <linkbase:loc xlink:label="ns15_AccreditationoftheAssuranceProvider" xlink:href="#sghg_AccreditationoftheAssuranceProvider" xlink:type="locator"/>
+          <linkbase:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:type="arc" xlink:from="ns15_AccreditationoftheAssuranceProvider" xlink:to="lbl_lab_ns15_AccreditationoftheAssuranceProvider"/>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_AccreditationoftheAssuranceProvider" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en-US">Description of the accreditation of the assurance provider.</linkbase:label>
+          <linkbase:loc xlink:label="ns15_CARBMandatoryReportingofGreenhouseGasEmissionsMRRAbstract" xlink:href="#sghg_CARBMandatoryReportingofGreenhouseGasEmissionsMRRAbstract" xlink:type="locator"/>
+          <linkbase:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:type="arc" xlink:from="ns15_CARBMandatoryReportingofGreenhouseGasEmissionsMRRAbstract" xlink:to="lbl_lab_ns15_CARBMandatoryReportingofGreenhouseGasEmissionsMRRAbstract"/>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_CARBMandatoryReportingofGreenhouseGasEmissionsMRRAbstract" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en-US">Information about the reporting entity pertaining to the California Air Resource Board Mandatory Reporting of Greenhouse Gas Emissions (MRR) program.</linkbase:label>
+          <linkbase:loc xlink:label="ns15_EntityParticipatesinCARBMRR" xlink:href="#sghg_EntityParticipatesinCARBMRR" xlink:type="locator"/>
+          <linkbase:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:type="arc" xlink:from="ns15_EntityParticipatesinCARBMRR" xlink:to="lbl_lab_ns15_EntityParticipatesinCARBMRR"/>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_EntityParticipatesinCARBMRR" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en-US">Indicates if the company participates in the CARB MRR. If it does, report as true; if it does not, report as false.</linkbase:label>
+          <linkbase:loc xlink:label="ns15_CARBMRREntityIdentifier" xlink:href="#sghg_CARBMRREntityIdentifier" xlink:type="locator"/>
+          <linkbase:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:type="arc" xlink:from="ns15_CARBMRREntityIdentifier" xlink:to="lbl_lab_ns15_CARBMRREntityIdentifier"/>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_CARBMRREntityIdentifier" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en-US">Identifier used by the company when reporting to the CARB MRR.</linkbase:label>
+          <linkbase:loc xlink:label="ns15_CARBMRREntitySectorEnumerated" xlink:href="#sghg_CARBMRREntitySectorEnumerated" xlink:type="locator"/>
+          <linkbase:labelArc xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:type="arc" xlink:from="ns15_CARBMRREntitySectorEnumerated" xlink:to="lbl_lab_ns15_CARBMRREntitySectorEnumerated"/>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_CARBMRREntitySectorEnumerated" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US">CARB MRR Entity Sector [Enumerated]</linkbase:label>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_CARBMRREntitySectorEnumerated" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en-US">The Regulation for the Mandatory Reporting of Greenhouse Gas Emissions (MRR) is applicable to electricity generators, industrial facilities, fuel suppliers, and electricity importers.</linkbase:label>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_DocumentandEntityAbstract" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US">Document and Entity [Abstract]</linkbase:label>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_LegalEntityIdentifier" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US">Legal Entity Identifier</linkbase:label>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_CaliforniaSpecificIdentifier" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US">California-Specific Identifier</linkbase:label>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_PhysicalLocationInCaliforniaEnumerated" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US">Physical Location in California [Enumerated]</linkbase:label>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_AssuranceAbstract" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US">Assurance [Abstract]</linkbase:label>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_AssuranceisProvidedonGHGReport" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US">Assurance is Provided on GHG Report</linkbase:label>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_AssuranceisLimitedorReasonableEnumerated" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US">Assurance is Limited or Reasonable [Enumerated]</linkbase:label>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_NameOfTheAssuranceProvider" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US">Name of the Assurance Provider</linkbase:label>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_AssuranceProvidedExplanatory" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US">Assurance Provided Explanatory</linkbase:label>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_AccreditationoftheAssuranceProvider" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US">Accreditation of the Assurance Provider</linkbase:label>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_CARBMandatoryReportingofGreenhouseGasEmissionsMRRAbstract" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US">CARB Mandatory Reporting of Greenhouse Gas Emissions (MRR) [Abstract]</linkbase:label>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_EntityParticipatesinCARBMRR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US">Entity Participates in CARB MRR</linkbase:label>
+          <linkbase:label xlink:type="resource" xlink:label="lbl_lab_ns15_CARBMRREntityIdentifier" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US">CARB MRR Entity Identifier</linkbase:label>
+        </linkbase:labelLink>
+      </linkbase:linkbase>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://xbrl.ifrs.org/taxonomy/ifrs_sds/2024-04-26/ifrs_sds/ifrs_sds" schemaLocation="https://xbrl.ifrs.org/taxonomy/ifrs_sds/2024-04-26/ifrs_sds_ext_2024-04-26.xsd"/>
+  <xs:element name="AccreditationoftheAssuranceProvider" id="sghg_AccreditationoftheAssuranceProvider" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="duration"/>
+  <xs:element name="AssuranceAbstract" id="sghg_AssuranceAbstract" type="xbrli:stringItemType" abstract="true" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="duration"/>
+  <xs:element name="AssuranceProvidedExplanatory" id="sghg_AssuranceProvidedExplanatory" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="duration"/>
+  <xs:element name="AssuranceisLimitedorReasonableEnumerated" id="sghg_AssuranceisLimitedorReasonableEnumerated" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="duration"/>
+  <xs:element name="AssuranceisProvidedonGHGReport" id="sghg_AssuranceisProvidedonGHGReport" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="duration"/>
+  <xs:element name="CARBMRREntityIdentifier" id="sghg_CARBMRREntityIdentifier" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="duration"/>
+  <xs:element name="CARBMRREntitySectorEnumerated" id="sghg_CARBMRREntitySectorEnumerated" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="duration"/>
+  <xs:element name="CARBMandatoryReportingofGreenhouseGasEmissionsMRRAbstract" id="sghg_CARBMandatoryReportingofGreenhouseGasEmissionsMRRAbstract" type="xbrli:stringItemType" abstract="true" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="duration"/>
+  <xs:element name="CaliforniaSpecificIdentifier" id="sghg_CaliforniaSpecificIdentifier" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="duration"/>
+  <xs:element name="DocumentandEntityAbstract" id="sghg_DocumentandEntityAbstract" type="xbrli:stringItemType" abstract="true" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="duration"/>
+  <xs:element name="EntityParticipatesinCARBMRR" id="sghg_EntityParticipatesinCARBMRR" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="duration"/>
+  <xs:element name="LegalEntityIdentifier" id="sghg_LegalEntityIdentifier" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="duration"/>
+  <xs:element name="NameOfTheAssuranceProvider" id="sghg_NameOfTheAssuranceProvider" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="duration"/>
+  <xs:element name="PhysicalLocationInCaliforniaEnumerated" id="sghg_PhysicalLocationInCaliforniaEnumerated" type="xbrli:stringItemType" nillable="true" substitutionGroup="xbrli:item" xbrli:periodType="duration"/>
+</xs:schema>
